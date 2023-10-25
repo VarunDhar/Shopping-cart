@@ -76,3 +76,26 @@ img{
   height:250px;
   width: 200px;
 }
+.cart{
+  position: relative;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-8px);}
+	60% {transform: translateY(-6px);}
+}
+.cartSize{
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  background-color: green;
+  border-radius: 200px;
+  height: 10px;
+  width: 10px;
+  text-align: center;
+  color: aliceblue;
+  padding: 5px;
+  font-size: 11px;
+  animation: bounce2 2s ease infinite;
+  
+}
