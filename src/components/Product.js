@@ -6,17 +6,15 @@ export const Product = ({ post }) => {
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => state);
   return (
-    <div>
-      <h2>{post.title}</h2>
+    <div className="product">
+      <h4>{post.title}</h4>
       <br></br>
       <img src={post.image} alt={post.title}></img>
       <br></br>
-      <h3>₹ {post.price}</h3>
+      <b>₹ {post.price}</b>
       <br></br>
-      <p>{post.description}</p>
-      <br></br>
+      <p>{post.description.substring(0,60) + "..."}</p>
       <p>Rating: {post.rating.rate}</p>
-      <br></br>
       {(cart.some((item) => {
         return item.id === post.id;
       })) ? (
