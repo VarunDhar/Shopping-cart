@@ -25,7 +25,7 @@ export const Home = () => {
         fetchData();
     },[]);
   return (
-    <div>
+    <div className='home'>
         {isLoading?
 
         (<Spinner/>)
