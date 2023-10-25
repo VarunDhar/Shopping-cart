@@ -42,12 +42,37 @@
   margin: 5px 15px 0 15px;
   justify-content:space-between;
   align-items: center;
+  margin-left: 60px;
 }
 /* .name{
   align-self: flex-start;
-}
+} */
 .rightside{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-self: flex-end;
-} */
+  gap: 15px;
+  margin-right: 60px;
+} 
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.product{
+  height: 400px;
+  width: 300px;
+  margin-bottom: 100px;
+  font-size: 14px;
+}
+button{
+  background-color: burlywood;
+  border-radius: 60px;
+  padding: 10px;
+}
+img{
+  height:250px;
+  width: 200px;
+}
